@@ -1,38 +1,211 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+
+body{
+background-color: #2b2b2b;
+}
+
+/* --- Global styling a--- */
+.App{
+  display: grid;
+  position: relative;
+  grid-gap: 0.4rem;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 0.1fr 2fr 0.1fr;
+  grid-template-areas :    
+  "header header" 
+  "main main" 
+  "footer footer";
+}
+
+
+
+header{
+ display: grid;
+ grid-template-columns: 1fr 0.8fr;
+ grid-gap: 0.4rem;
+  justify-content: space-between;
+  background-color: aqua;
+  align-items: center;
+  padding: 0 0.4rem;
+  
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+  background-color: rgb(255, 181, 168);
+}
+
+footer{
+  grid-area: footer;
+  background-color: orange;
+}
+
+/* --- HEADER styling --- */
+.headerWrap{
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  grid-gap: 0.4rem;
+  justify-content: space-between;
+  background-color: orange;
+}
+
+.headerBtnList, .headerOptionsWrap{
+  display: none;
+  /* flex */
+  align-items: center;  
+}
+
+.headerBtnList{
   text-align: center;
+  padding: 0;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerBtn{
+  text-decoration: none;
+  list-style: none;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerOptionsWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* --- Mobile BTN --- */
+.mobileBtnWrap{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.281);
+  justify-content: flex-end;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.mobileBtnWrap button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.navOptionBtn{
+  display: none;
+}
+
+.hmbgIcon{
+  width: 12vw;
+  max-width: 3rem;
+}
+
+/* --- MAIN styling --- */
+main{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 0rem 0.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.topLogo{
+  margin: 0;
+  width: 12vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title{
+font-size: 15vw;
+margin: 0;
+}
+
+main p {
+  width: 60vw;
+}
+
+/* --- FOOTER styling --- */
+.footerWrap { 
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  grid-template-areas: "name social";
+  padding: 0 0.4rem;
+}
+
+.myName{
+  grid-area: name;
+  text-align: start;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  grid-area: social;
+}
+
+.socialIcons li{
+  list-style: none;
+}
+
+/* --- Media --- */
+@media(min-width: 480px){
+ 
+}
+
+/* --- Media --- */
+@media(min-width: 720px){
+  .headerOptionsWrap{
+    display: flex;     
   }
-  to {
-    transform: rotate(360deg);
+
+  .headerBtnList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+  }
+
+  .mobileBtnWrap{
+    display: none;
+  }
+
+  .navOptionBtn{
+    display: flex;
   }
 }
+
+@media(min-width: 1080px){
+
+  main{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .title{
+    font-size: 10rem;
+    margin: 0;
+    }
+
+    main p {
+      width: 20rem;
+    }
+    
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media only screen and (min-width:720px)  {
+  /* Targets galaxy fold horizontal and all mobile 720 desktop changes too */
+  .topLogo{
+    font-size: 1.6rem;
+  }
+  .hmbgIcon{
+    width: 2rem;
+  }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
