@@ -31,7 +31,7 @@ header{
   
   grid-area: header;
 
-  height: 10vh;
+ 
 }
 
 main{
@@ -95,6 +95,7 @@ footer{
   background-color: rgba(0, 0, 255, 0.281);
   justify-content: flex-end;
   padding: 0.3rem;
+  
   width: 100%;
 }
 
@@ -163,7 +164,7 @@ main p {
 
 .modelPic{
   position: fixed;
-  width: 10rem;
+  height: 80vh;
   bottom: 0px;
   opacity: 0.5;
 }
@@ -229,9 +230,13 @@ main p {
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-@media only screen and (orientation: landscape) {
+@media (max-width: 640px) and (orientation: landscape) {
   body {
     background-color: lightblue;
+  }
+
+  h1{
+    color: blue;
   }
 
 
