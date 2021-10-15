@@ -236,7 +236,7 @@ main p {
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-@media (orientation: landscape) {
+@media (max-width:654px) and (orientation: landscape) {
 
   body {
     background-color: lightblue;
@@ -246,8 +246,15 @@ main p {
     color: blue;
   }
 
+  .title{
+    color: blue;
+  }
+
   .modelPic{
-    right: 2rem;
+    
+    height: 24rem;
+    bottom: -9rem;
+    right: 10vw;
   }
 
 }
