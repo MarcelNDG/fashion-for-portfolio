@@ -15,9 +15,12 @@ const Home = () => {
         </header>
 
         <main>
-            <h2 className='title'>PAGE TITLE</h2>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas feugiat luctus. Duis et sem posuere, hendrerit justo id, ornare massa. Morbi laoreet mauris mauris, quis congue augue accumsan finibus. Maecenas consectetur urna ac mauris dictum, pharetra dictum erat tempor. Suspendisse potenti.</p>
+            <div className='mainWrap'>
+                <h2 className='title'>PAGE TITLE</h2>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas feugiat luctus. Duis et sem posuere, hendrerit justo id, ornare massa. Morbi laoreet mauris mauris, quis congue augue accumsan finibus. Maecenas consectetur urna ac mauris dictum, pharetra dictum erat tempor. Suspendisse potenti.</p>
+            </div>
+
         </main>
 
         <footer>

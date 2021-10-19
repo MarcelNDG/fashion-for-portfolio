@@ -20,21 +20,22 @@ background-color: #2b2b2b;
 
 header{
  display: grid;
+ justify-content: space-between;
+ background-color: aqua;
+ align-items: center;
+ height: 10vh;
  grid-template-columns: 1fr 0.8fr;
  grid-gap: 0.4rem;
-  justify-content: space-between;
-  background-color: aqua;
-  align-items: center;
-  padding: 0 0.4rem;
-  height: 10vh;
-  min-height: 3rem;
+ padding: 0 0.4rem;
+ min-height: 3rem;
   
   grid-area: header;
- 
 }
 
 main{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -43,8 +44,8 @@ main{
   padding: 0rem 0.4rem;
   
   min-height: 80vh;
+
   grid-area: main;
-  
 }
 
 footer{
@@ -123,11 +124,22 @@ footer{
 }
 
 .title{
+justify-self: center;
 font-size: 15vw;
 margin: 0;
 }
 
-main p {
+.mainWrap{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.mainWrap  p {
+  justify-self: center;
+  align-self: center;
+  margin: 0;
   width: 60vw;
 }
 
@@ -170,6 +182,10 @@ main p {
   align-self: center
 }
 
+/* --- HOME page --- */
+
+
+
 /* --- Media --- */
 @media(min-width: 480px){
  
@@ -177,6 +193,19 @@ main p {
 
 /* --- Media --- */
 @media(min-width: 720px){
+
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mainWrap{
+    padding: 0 2rem;
+  }
+
+  .title{
+    font-size: 5rem;
+  }
+
   .headerOptionsWrap{
     display: flex;     
   }
@@ -209,14 +238,21 @@ main p {
     align-items: center;
   }
 
+  .mainWrap{
+    padding: 0 2rem;
+  }
+
   .title{
-    font-size: 10rem;
     margin: 0;
     }
 
     main p {
-      width: 20rem;
-    }
+    width: 20rem;
+  }
+
+  .modelPic{
+    right: 6rem;
+  }
     
 }
 
