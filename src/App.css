@@ -16,8 +16,6 @@ background-color: #2b2b2b;
   width: 100vw;
 }
 
-
-
 header{
  display: grid;
  justify-content: space-between;
@@ -56,6 +54,13 @@ footer{
 }
 
 /* --- HEADER styling --- */
+
+.topLogoLink{
+  text-decoration: none;
+
+  z-index: 2;
+}
+
 .headerWrap{
   display: grid;
   grid-template-columns: 1fr 0.2fr;
@@ -63,6 +68,7 @@ footer{
   justify-content: space-between;
   background-color: orange;
 }
+
 
 .headerBtnList, .headerOptionsWrap{
   display: none;
@@ -87,6 +93,7 @@ footer{
   background-color: orangered;
 }
 
+
 /* --- Mobile BTN --- */
 .mobileBtnWrap{
   display: flex;
@@ -99,6 +106,8 @@ footer{
   min-height: 3rem;
   height: 10vh;
   width: 100%;
+
+  z-index: 0;
 }
 
 .mobileBtnWrap button{
@@ -109,6 +118,17 @@ footer{
 
 .navOptionBtn{
   display: none;
+}
+
+.navOptionBtn button{
+  border: none;
+  background-color: transparent;
+}
+
+
+.userIcon{
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 .hmbgIcon{
@@ -127,6 +147,8 @@ footer{
 justify-self: center;
 font-size: 15vw;
 margin: 0;
+
+z-index: 2;
 }
 
 .mainWrap{
@@ -141,6 +163,8 @@ margin: 0;
   align-self: center;
   margin: 0;
   width: 60vw;
+
+  z-index: 2;
 }
 
 /* --- FOOTER styling --- */
@@ -178,8 +202,10 @@ margin: 0;
   position: fixed;
   height: 80vh;
   bottom: 0px;
-  opacity: 0.5;
-  align-self: center
+  opacity: 0.4;
+  align-self: center;
+
+  z-index: 0;
 }
 
 /* --- HOME page --- */
@@ -227,6 +253,7 @@ margin: 0;
   .modelPic{
     align-self: end;
     right: 1.8rem;
+    opacity: 1;
   }
 }
 

@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import {ReactComponent as UserIcon} from '../icon/user.svg';
+
 const HeaderContent = () => {
     return (
         <>
-            <h1 className='topLogo'>LOGO</h1>
+          <Link to='/' className='topLogoLink'> <h1 className='topLogo'>LOGO</h1></Link>
             <div className='headerWrap'>
                 <ul className='headerBtnList'>
                     <Link to='/about' className='headerBtn'>About</Link>
@@ -15,7 +17,10 @@ const HeaderContent = () => {
                 </ul>
                 <div className='headerOptionsWrap'>
                     <div className='navOptionBtn'>
-                        <button>Button</button>
+
+                        <button>
+                            <UserIcon className='userIcon' />
+                        </button>
                     </div>                    
                 </div>
                 
