@@ -241,7 +241,8 @@ z-index: 2;
 }
 
 .aboutWrap h2{
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: 0;
 }
 .aboutWrap p{
   font-size: 1.1rem;
@@ -324,6 +325,10 @@ z-index: 2;
 
   .modelPic{
     right: 6rem;
+    bottom: -10rem;
+
+    height: 50rem;
+    width: 26rem;
   }
     
 }
@@ -365,7 +370,6 @@ z-index: 2;
   }
 
   .modelPic{
-    
     height: 24rem;
     bottom: -9rem;
     right: 10vw;
