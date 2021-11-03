@@ -17,9 +17,11 @@ const Home = () => {
 
         <main>
             <div className='mainWrap'>
+                <div className='mainTextWrap'>
                 <h2 className='title'>FASHION</h2>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas feugiat luctus. Duis et sem posuere, hendrerit justo id, ornare massa. Morbi laoreet mauris mauris, quis congue augue accumsan finibus. Maecenas consectetur urna ac mauris dictum, pharetra dictum erat tempor. Suspendisse potenti.</p>
+                </div>
+                
             </div>
 
         </main>
