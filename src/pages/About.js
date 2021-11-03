@@ -2,6 +2,8 @@ import React from 'react'
 import HeaderContent from '../components/HeaderContent'
 import FooterContent from '../components/FooterContent'
 
+import Model from '../img/model2.png'
+
 const About = () => {
     return (
         <>
@@ -9,12 +11,20 @@ const About = () => {
             <HeaderContent />
         </header>
         
-        <main>            
+        <main> 
+            <div className='aboutWrap'>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas feugiat luctus. Duis et sem posuere, hendrerit justo id, ornare massa. Morbi laoreet mauris mauris, quis congue augue accumsan finibus. Maecenas consectetur urna ac mauris dictum, pharetra dictum erat tempor. Suspendisse potenti.</p>
+            </div>
+
+                       
         </main>
 
         <footer>
             <FooterContent />
         </footer>
+
+        <img className='modelPic' src={Model} alt="Model" />
         </>
     )
 }

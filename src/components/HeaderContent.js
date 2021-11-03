@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import {ReactComponent as UserIcon} from '../icon/user.svg';
+import {ReactComponent as ShopCart} from '../icon/shopping-cart.svg';
 
 const HeaderContent = () => {
     return (
@@ -13,13 +14,17 @@ const HeaderContent = () => {
                     <Link to='/stores' className='headerBtn'>Stores</Link>
                     <Link to='/contact' className='headerBtn'>Contact</Link>
                     <Link to='/sale' className='headerBtn'>Sale</Link>
+                    
 
                 </ul>
                 <div className='headerOptionsWrap'>
                     <div className='navOptionBtn'>
 
                         <button>
-                            <UserIcon className='userIcon' />
+                            <ShopCart className='userIcon' />                            
+                        </button>
+                        <button>
+                            <UserIcon className='userIcon' />                            
                         </button>
                     </div>                    
                 </div>
