@@ -55,6 +55,14 @@ footer{
   background-color: orange;
   min-height: 4rem;
   height: 10vh;
+  padding: 0 1rem;
+}
+
+.footerWrap{
+  height: 100%;
+}
+.footerWrap .myName, .footerWrap .socialIcons{
+  align-self: center;
 }
 
 /* --- HEADER styling --- */
@@ -277,7 +285,9 @@ z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
-    width: 60vw;  
+    width: 60vw;
+    max-width: 40rem;
+  
   }
   .mobileBtnWrap{
     display: none;
@@ -317,6 +327,11 @@ z-index: 2;
     grid-template-columns: 1.7fr 1fr;
     padding: 0 6rem;
     z-index: 1;
+  }
+
+  /* Footer */
+  footer{
+    padding: 0 2rem;
   }
 }
 
