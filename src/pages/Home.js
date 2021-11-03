@@ -6,6 +6,7 @@ import Model from '../img/model.png'
 import MobileBtn from '../components/MobileBtn'
 import HeaderContent from '../components/HeaderContent'
 import FooterContent from '../components/FooterContent'
+import SphereBig from '../components/SphereBig'
 
 
 const Home = () => {
@@ -30,7 +31,9 @@ const Home = () => {
             <FooterContent />
         </footer>
 
-        
+            
+                <SphereBig />
+            
             <img className='modelPic' src={Model} alt="Model" />
        
             

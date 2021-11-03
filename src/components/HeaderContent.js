@@ -10,10 +10,10 @@ const HeaderContent = () => {
           <Link to='/' className='topLogoLink'> <h1 className='topLogo'>LOGO</h1></Link>
             <div className='headerWrap'>
                 <ul className='headerBtnList'>
-                    <Link to='/about' className='headerBtn'>About</Link>
+                    <Link to='/sale' className='headerBtn'>Products</Link>
                     <Link to='/stores' className='headerBtn'>Stores</Link>
+                    <Link to='/about' className='headerBtn'>About</Link>
                     <Link to='/contact' className='headerBtn'>Contact</Link>
-                    <Link to='/sale' className='headerBtn'>Sale</Link>
                     
 
                 </ul>
