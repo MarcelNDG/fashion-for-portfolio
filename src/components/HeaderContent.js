@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import {ReactComponent as UserIcon} from '../icon/user.svg';
 import {ReactComponent as ShopCart} from '../icon/shopping-cart.svg';
 
+import CartNumber from '../components/CartNumber'
+
 const HeaderContent = () => {
     return (
         <>
@@ -20,8 +22,9 @@ const HeaderContent = () => {
                 <div className='headerOptionsWrap'>
                     <div className='navOptionBtn'>
 
-                        <button>
-                            <ShopCart className='userIcon' />                            
+                        <button className='cartBtn'>
+                            <ShopCart className='userIcon' />
+                            <CartNumber />                            
                         </button>
                         <button>
                             <UserIcon className='userIcon' />                            

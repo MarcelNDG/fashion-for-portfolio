@@ -1,4 +1,6 @@
 import React from 'react'
+
+import MobileBtn from '../components/MobileBtn'
 import HeaderContent from '../components/HeaderContent'
 import FooterContent from '../components/FooterContent'
 
@@ -30,6 +32,7 @@ const About = () => {
             </footer>
 
             <img className='modelPic' src={Model} alt="Model" />
+            <MobileBtn />
         </>
     )
 }

@@ -10,7 +10,11 @@ const Sale = () => {
            <HeaderContent />
        </header>
        
-       <main>            
+       <main>
+            <div className='salesWrap'>
+                <h2>Title</h2>
+                
+            </div>            
        </main>
 
        <footer>

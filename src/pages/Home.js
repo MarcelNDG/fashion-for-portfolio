@@ -31,13 +31,9 @@ const Home = () => {
             <FooterContent />
         </footer>
 
-            
-                <SphereBig />
-            
+            <SphereBig />            
             <img className='modelPic' src={Model} alt="Model" />
-       
-            
-        <MobileBtn />
+            <MobileBtn />
         </>
     )
 }
