@@ -9,8 +9,8 @@ import CartNumber from '../components/CartNumber'
 const HeaderContent = () => {
     return (
         <>
-          <Link to='/' className='topLogoLink'> <h1 className='topLogo'>LOGO</h1></Link>
             <div className='headerWrap'>
+          <Link to='/' className='topLogoLink'> <h1 className='topLogo'>LOGO</h1></Link>
                 <ul className='headerBtnList'>
                     <Link to='/sale' className='headerBtn'>Products</Link>
                     <Link to='/stores' className='headerBtn'>Stores</Link>

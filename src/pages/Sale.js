@@ -2,12 +2,16 @@ import React from 'react'
 import HeaderContent from '../components/HeaderContent'
 import FooterContent from '../components/FooterContent'
 
+import MobileBtn from '../components/MobileBtn'
+import SalesOptions from '../components/SalesOptions'
+
 
 const Sale = () => {
     return (
         <>
         <header>
            <HeaderContent />
+           
        </header>
        
        <main>
@@ -20,6 +24,8 @@ const Sale = () => {
        <footer>
            <FooterContent />
        </footer>
+       <MobileBtn />
+       <SalesOptions />
        </>
     )
 }
