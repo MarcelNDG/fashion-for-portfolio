@@ -315,11 +315,12 @@ z-index: 2;
   display: flex;
   position: absolute;
   align-items: flex-end;
-  background-color: #ffd2d2;
-  justify-content: flex-end;
+  background-color: #f8b8b8;
+  justify-content: space-between;
   height: 16vh;
   width: 100%;
-  padding: 1rem;  
+  padding: 0.8rem 1rem;
+  padding-right: 1.6rem;  
   min-height: 3rem;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -330,6 +331,11 @@ z-index: 2;
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.salesIcon{
+  width: 1.8rem;
+  max-width: 2.2rem;
 }
 
 /* --- Media --- */
