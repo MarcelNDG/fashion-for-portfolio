@@ -4,6 +4,7 @@ import FooterContent from '../components/FooterContent'
 
 import MobileBtn from '../components/MobileBtn'
 import SalesOptions from '../components/SalesOptions'
+import SalesSearchBar from '../components/SalesSearchBar'
 
 
 const Sale = () => {
@@ -26,6 +27,7 @@ const Sale = () => {
        </footer>
        <MobileBtn />
        <SalesOptions />
+       <SalesSearchBar />
        </>
     )
 }

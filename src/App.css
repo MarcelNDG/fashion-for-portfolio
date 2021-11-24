@@ -316,8 +316,8 @@ z-index: 2;
   position: absolute;
   align-items: flex-end;
   background-color: #f8b8b8;
-  justify-content: space-between;
-  height: 16vh;
+  justify-content: flex-end;
+  height: 6.8rem;
   width: 100%;
   padding: 0.8rem 1rem;
   padding-right: 1.6rem;  
@@ -331,6 +331,18 @@ z-index: 2;
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.salesSearchBar{
+  position: absolute;
+  border: none;
+  height: 1.8rem;
+  width: 60vw;
+  padding-left: 1rem;
+  border-radius: 20px;
+  margin-top: 4rem;
+
+  z-index: 10;
 }
 
 .salesIcon{
