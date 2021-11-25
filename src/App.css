@@ -112,6 +112,7 @@ footer{
 .headerBtn{
   text-decoration: none;
   list-style: none;  
+  font-family: "Poppins";
 }
 
 .headerOptionsWrap{
