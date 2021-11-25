@@ -11,27 +11,27 @@ const HeaderContent = () => {
         <>
             <div className='headerWrap'>
           <Link to='/' className='topLogoLink'> <h1 className='topLogo'>LOGO</h1></Link>
-                <ul className='headerBtnList'>
-                    <Link to='/sale' className='headerBtn'>Products</Link>
-                    <Link to='/stores' className='headerBtn'>Stores</Link>
-                    <Link to='/about' className='headerBtn'>About</Link>
-                    <Link to='/contact' className='headerBtn'>Contact</Link>
-                    
 
-                </ul>
-                <div className='headerOptionsWrap'>
-                    <div className='navOptionBtn'>
+                <div className='headerBtnWrap'>
+                    <ul className='headerBtnList'>
+                        <Link to='/sale' className='headerBtn'>Products</Link>
+                        <Link to='/stores' className='headerBtn'>Stores</Link>
+                        <Link to='/about' className='headerBtn'>About</Link>
+                        <Link to='/contact' className='headerBtn'>Contact</Link>
+                    </ul>
+                    <div className='headerOptionsWrap'>
+                        <div className='navOptionBtn'>
 
-                        <button className='cartBtn'>
-                            <ShopCart className='userIcon' />
-                            <CartNumber />                            
-                        </button>
-                        <button>
-                            <UserIcon className='userIcon' />                            
-                        </button>
-                    </div>                    
+                            <button className='cartBtn'>
+                                <ShopCart className='userIcon' />
+                                <CartNumber />                            
+                            </button>
+                            <button>
+                                <UserIcon className='userIcon' />                            
+                            </button>
+                        </div>                    
+                    </div>
                 </div>
-                
             </div>
         </>
     )

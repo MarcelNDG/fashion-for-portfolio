@@ -92,6 +92,13 @@ footer{
   align-items: center;
 }
 
+.headerBtnWrap{
+  display: flex;
+  width: 70vw;
+  max-width: 43rem;
+  justify-content: space-between;
+}
+
 .headerBtnList{
   text-align: center;
   padding: 0;
@@ -311,6 +318,27 @@ z-index: 2;
 }
 
 /* --- SALES page --- */
+.salesWrap{
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.8rem;
+  background-color: blue;
+  
+}
+
+.salesWrap h2{
+  display: inline-block;
+ 
+}
+.salesContainer{
+  
+}
+
+.saleCategory{
+  height: 10rem;
+  background-color: aqua;
+}
+
 .saleOptionsWrap{
   display: flex;
   position: absolute;
@@ -324,6 +352,7 @@ z-index: 2;
   min-height: 3rem;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+
   z-index: 0;
 }
 
@@ -339,6 +368,7 @@ z-index: 2;
   height: 1.8rem;
   width: 60vw;
   padding-left: 1rem;
+  margin-left: 1rem;
   border-radius: 20px;
   margin-top: 4rem;
 
@@ -436,6 +466,11 @@ z-index: 2;
   header{
     grid-template-columns: 1fr;
     padding: 0rem 12vw ;
+  }
+
+  .headerBtnWrap{
+    width: 65vw;
+    max-width: 50rem;
   }
 
   main{

@@ -11,20 +11,28 @@ const Sale = () => {
     return (
         <>
         <header>
-           <HeaderContent />
-           
+           <HeaderContent />           
        </header>
        
        <main>
             <div className='salesWrap'>
-                <h2>Title</h2>
-                
+                               
+                <div className='salesContainer'>
+                    <div className='saleCategory'></div>
+                    <div className='saleCategory'></div>
+                    <div className='saleCategory'></div>
+                    <div className='saleCategory'></div>
+                    
+                    
+                    
+                </div>
             </div>            
        </main>
 
        <footer>
            <FooterContent />
        </footer>
+
        <MobileBtn />
        <SalesOptions />
        <SalesSearchBar />

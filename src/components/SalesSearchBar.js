@@ -3,7 +3,9 @@ import React from 'react'
 const SalesSearchBar = () => {
     return (
         <>
-            <input className='salesSearchBar' type="text" placeholder="Search.."></input>
+            <input className='salesSearchBar' type="text" placeholder="Search..">
+                
+            </input>
         </>
     )
 }
