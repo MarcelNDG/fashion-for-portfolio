@@ -23,7 +23,7 @@ font-family: "Titillium Web", sans-serif;
 header{
  display: grid;
  justify-content: space-between;
- background-color: #fdcfcf;
+ background-color: #fff0f0;
  align-items: center;
  height: 8vh;
  grid-template-columns: 1fr 0.8fr;
