@@ -17,7 +17,7 @@ font-family: "Titillium Web", sans-serif;
   position: relative;
   justify-content: space-between;
   
-  width: 100vw;
+  width: 100%;
 }
 
 header{
@@ -331,9 +331,7 @@ z-index: 2;
   display: inline-block;
  
 }
-.salesContainer{
-  
-}
+
 
 .saleCategory{
   height: 10rem;

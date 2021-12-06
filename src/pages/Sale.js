@@ -10,32 +10,32 @@ import SalesSearchBar from '../components/SalesSearchBar'
 const Sale = () => {
     return (
         <>
-        <header>
-           <HeaderContent />           
-       </header>
-       
-       <main>
-            <div className='salesWrap'>
-                               
-                <div className='salesContainer'>
-                    <div className='saleCategory'></div>
-                    <div className='saleCategory'></div>
-                    <div className='saleCategory'></div>
-                    <div className='saleCategory'></div>
-                    
-                    
-                    
-                </div>
-            </div>            
-       </main>
+            <header>
+            <HeaderContent />           
+            </header>
+        
+        <main>
+                <div className='salesWrap'>
+                                
+                    <div className='salesContainer'>
+                        <div className='saleCategory'></div>
+                        <div className='saleCategory'></div>
+                        <div className='saleCategory'></div>
+                        <div className='saleCategory'></div>
+                        
+                        
+                        
+                    </div>
+                </div>            
+        </main>
 
-       <footer>
-           <FooterContent />
-       </footer>
+        <footer>
+            <FooterContent />
+        </footer>
 
-       <MobileBtn />
-       <SalesOptions />
-       <SalesSearchBar />
+        <MobileBtn />
+        <SalesOptions />
+        <SalesSearchBar />
        </>
     )
 }
