@@ -151,8 +151,7 @@ footer{
   width: 100%;
   padding: 1rem;  
   min-height: 3rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  
   z-index: 1;
 }
 
@@ -324,16 +323,13 @@ z-index: 2;
   flex-direction: column;
   margin-top: 6.8rem;
   background-color: blue;
-  
+  height: 100%;
 }
 
 .salesWrap h2{
   display: inline-block;
- 
 }
-
-
-.saleCategory{
+.categoriesTop{
   height: 10rem;
   background-color: aqua;
 }
@@ -361,15 +357,19 @@ z-index: 2;
   background-color: transparent;
 }
 
+.searchContainer{
+  position: absolute;
+}
+
 .salesSearchBar{
   position: absolute;
   border: none;
   height: 1.8rem;
   width: 60vw;
+  margin-top: 4.2rem;
   padding-left: 1rem;
   margin-left: 1rem;
   border-radius: 20px;
-  margin-top: 4rem;
 
   z-index: 10;
 }
@@ -397,6 +397,7 @@ z-index: 2;
   .headerWrap{
     display: flex;
   }
+
   .headerOptionsWrap{
     display: flex; 
     flex-direction: column;    
@@ -423,7 +424,7 @@ z-index: 2;
   /* Main */
 
   main{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
   }
   .mainWrap{
     display: grid;
@@ -457,6 +458,11 @@ z-index: 2;
   /* Footer */
   footer{
     padding: 0 2rem;
+  }
+
+  /* Sales */
+  .searchContainer{
+    display: none;
   }
 }
 
@@ -509,7 +515,8 @@ z-index: 2;
 @media only screen and (min-width:720px)  {
   /* Targets galaxy fold horizontal and all mobile 720 desktop changes too */
   .topLogo{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
   }
   .hmbgIcon{
     width: 2rem;

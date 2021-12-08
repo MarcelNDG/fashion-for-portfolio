@@ -5,6 +5,7 @@ import FooterContent from '../components/FooterContent'
 import MobileBtn from '../components/MobileBtn'
 import SalesOptions from '../components/SalesOptions'
 import SalesSearchBar from '../components/SalesSearchBar'
+import CategoriesTop from '../components/CategoriesTop'
 
 
 const Sale = () => {
@@ -16,12 +17,17 @@ const Sale = () => {
         
         <main>
                 <div className='salesWrap'>
-                                
                     <div className='salesContainer'>
-                        <div className='saleCategory'></div>
-                        <div className='saleCategory'></div>
-                        <div className='saleCategory'></div>
-                        <div className='saleCategory'></div>
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        <CategoriesTop />
+                        
+                        
                         
                         
                         
