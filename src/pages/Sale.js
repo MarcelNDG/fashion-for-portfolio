@@ -18,15 +18,9 @@ const Sale = () => {
         <main>
                 <div className='salesWrap'>
                     <div className='salesContainer'>
-                        <CategoriesTop />
-                        <CategoriesTop />
-                        <CategoriesTop />
-                        <CategoriesTop />
-                        <CategoriesTop />
-                        <CategoriesTop />
-                        <CategoriesTop />
-                        <CategoriesTop />
+                        <CategoriesTop clothes='Clothes' shoes='Shoes' accesories='Accesories' />
                         
+                                           
                         
                         
                         
