@@ -321,7 +321,7 @@ z-index: 2;
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
-  background-color: blue;
+  /*background-color: blue;*/
   
 }
 
@@ -332,7 +332,7 @@ z-index: 2;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
   height: 10rem;
-  background-color: aqua;
+  /*background-color: aqua;*/
 }
 
 .categoryContainer{
@@ -403,11 +403,23 @@ z-index: 2;
   max-width: 2.2rem;
 }
 
-.productContainer{
-  background-color: greenyellow;
-  width: 100%;
-  height: 6rem;
+.productsWrap{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  padding: 0.6rem;
 }
+
+.productContainer{
+  width: 100%;
+  max-width: 28rem;
+  height: 15rem;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  border: 2px #2b2b2b solid;
+}
+
+
 
 /* --- Media --- */
 @media(min-width: 480px){
@@ -580,7 +592,13 @@ z-index: 2;
   .signature{
     margin-top: 2rem;
   }
+
+  /* sale */
   
+  .productsWrap{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.6rem;
+  }
     
 }
 
