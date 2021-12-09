@@ -7,7 +7,7 @@ import SalesOptions from '../components/SalesOptions'
 import SalesSearchBar from '../components/SalesSearchBar'
 import SideOptionsDesktop from '../components/SideOptionsDesktop'
 import CategoriesTop from '../components/CategoriesTop'
-import Product from '../components/Product'
+import Products from '../components/Products'
 
 
 const Sale = () => {
@@ -23,11 +23,7 @@ const Sale = () => {
                         <SalesSearchBar />
                         <SideOptionsDesktop />
                         <CategoriesTop clothes='Clothes' shoes='Shoes' accesories='Accesories' />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
+                        <Products />
                         
                         
                         
