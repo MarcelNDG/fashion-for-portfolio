@@ -3,7 +3,12 @@ import React from 'react'
 const SideOptionsDesktop = () => {
     return (
         <>
-        <aside className='asideDesktop'></aside>
+        <aside className='asideDesktopWrap'>
+            <div className='asideContainer'></div>
+            <div className='asideContainer'></div>
+            <div className='asideContainer'></div>
+            <div className='asideContainer'></div>
+        </aside>
             
         </>
     )

@@ -78,6 +78,7 @@ footer{
 .headerWrap{
   display: none;  
   height: 8vh;
+  max-width: 70rem;
   grid-template-columns: 1fr 0.2fr;
   grid-gap: 0.4rem;
   justify-content: space-between;
@@ -319,8 +320,9 @@ z-index: 2;
 /* --- SALES page --- */
 .salesWrap{
   display: flex;
+  height: 100%;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: 8rem;
   /*background-color: blue;*/
   
 }
@@ -401,6 +403,16 @@ z-index: 2;
 .salesIcon{
   width: 1.8rem;
   max-width: 2.2rem;
+}
+
+.asideDesktopWrap{
+  display: none;
+  margin-top: 11rem;
+}
+.asideContainer{
+  background-color: greenyellow;
+  width: 100%;
+  height: 16rem;
 }
 
 .productsWrap{
@@ -510,7 +522,7 @@ z-index: 2;
 
   .salesContainer{
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-areas:
     "search search" 
     "aside categories"
@@ -521,7 +533,8 @@ z-index: 2;
     "aside products";
   }
 
-  .asideDesktop{
+  .asideDesktopWrap{
+    display: block;
     grid-area: aside;
   }
   .searchContainer{
@@ -598,6 +611,10 @@ z-index: 2;
   .productsWrap{
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.6rem;
+  }
+
+  .salesContainer{
+    grid-template-columns: 0.4fr 1fr;
   }
     
 }
